@@ -1,0 +1,192 @@
+                                  
+                                                   Hadoop Framework
+                                                        Assignment 2.1
+
+1.HardCode Sum of 2 integers:
+         import java.io.*;
+         class Acad
+         {
+           public static void main(String [] args)
+           {
+             Integer a,b,c;
+             a=1;
+             b=2;
+             c=a+b;
+             System.out.println("Sum is"+c); 
+            }
+          }
+
+
+2.Sum of 2 integers . I/P from user.
+         import java.io.*;
+           class Acad
+         {
+           public static void main(String [] args)
+           {
+             Integer a,b,c;
+             Scanner sc=new Scanner(System.in);
+             a=sc.nextInt();            //get input from user
+             b=sc.nextInt();              //get input from user
+             c=a+b;
+             System.out.println("Sum is"+c); 
+            }
+          }
+
+
+
+3.Sum of 2 numbers using a method:
+              import java.util.Scanner;
+
+                 public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		sum(a,b);         //**Calling method*/
+	}
+		public static void sum(int a,int b)
+		{
+			int c=a+b;
+                                    System.out.println("First Number is:"+a);
+			System.out.println("Second Number is:"+b);
+		System.out.println("Sum is"+c);
+		}
+
+	}
+
+
+                                    
+
+4)Even Odd Numbers between 2 given numbers
+        import java.util.Scanner;
+
+        public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println("Even");
+		for(int i=a;i<b;i++)       /*Checking even no.*/
+		{
+			if(i%2==0)
+				System.out.println(i);
+			
+		}
+		System.out.println("Odd");
+		for(int i=a;i<b;i++)     /*Checking odd no.s*/
+		{
+			if(i%2!=0)
+			  System.out.println(i);
+		}
+	}
+	}
+
+     
+
+5)First Ten Multiples Of a given number
+             import java.util.Scanner;
+
+           public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=0;
+		for(int i=1;i<11;i++)
+		{
+			b=a*i;
+			System.out.println(a+"*"+i+"="+b);
+		}
+
+	}
+
+             }
+
+
+
+
+6)Method Overloading : sum()
+       import java.util.Scanner;
+
+        public class Main {
+	public static void main(String []args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+				
+		sum(a,b);
+		sum(a,b,c);
+	}
+		public static void sum(int a,int b)
+		{
+			int x=a+b;
+			System.out.println(x);
+			return;
+		}
+		public static void sum(int a,int b,int c)
+		{
+			int d=a+b+c;
+			System.out.println(d);
+			return ;
+		}
+	}
+
+
+7)Yes, a method with same return type can be overloaded by 
+        Two methods with same name and same return type and
+              1.Having different number of parameters of same data type.
+              2.Having different number of parameters of different type.
+              3. Having same number of parameters of different type.
+   Following is an example:
+            import java.util.Scanner;
+
+public class Main {
+	public static void main(String []args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+				
+		int i=sum(a,b);
+		System.out.println("Sum of 2 no:  "+i);
+		int j=sum(a,b,c);
+		System.out.println("Sum of 3 no:  "+j);
+	}
+		public static int sum(int a,int b)//method withSame retun type int
+		{
+			int x=a+b;
+			
+			return x;
+		}
+		public static int sum(int a,int b,int c) //**Same return type int
+		{
+			int d=a+b+c;
+			
+			return d;
+		}
+	}
+
+
+8)progarm in java using Arrays that sorts the element in descending order.
+            import java.util.Arrays;
+            import java.util.Collections;
+
+            public class Main {
+	public static void main(String[] args)
+	{
+	Integer a[]={10,7,45,1,28};
+	Arrays.sort(a,Collections.reverseOrder());           /*use sort() and reverseOrder() methods
+	System.out.println(Arrays.toString(a));
+                   }}
+
+
+
+
+  
